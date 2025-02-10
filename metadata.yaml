@@ -1,6 +1,6 @@
-name: error_filter # 这是你的插件的唯一识别名。
-desc: 屏蔽机器人的错误信息回复。 # 插件简短描述
+name: error_replacer # 这是你的插件的唯一识别名。
+desc: (Fork from LuffyLSX/astrbot_plugin_error_filter) 指定机器人的错误信息。 # 插件简短描述
 help: 输入 /keyword 查看关键词回复帮助。 # 插件的帮助信息
 version: v1.0 # 插件版本号
-author: LuffyLSX # 作者
-repo: https://github.com/LuffyLSX/astrbot_plugin_error_filter # 插件的仓库地址
+author: Qalxry  # 作者
+repo: https://github.com/Qalxry/astrbot_plugin_error_filter # 插件的仓库地址
