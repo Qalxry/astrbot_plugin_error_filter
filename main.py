@@ -6,7 +6,7 @@ from astrbot.api import logger
 from astrbot.api.provider import LLMResponse
 from openai.types.chat.chat_completion import ChatCompletion
 
-@register("error_filter", "Qalxry (fork from LuffyLSX)", "指定机器人的错误信息。", "1.0.1")
+@register("error_replacer", "Qalxry", "指定机器人的错误信息。", "1.0")
 class ErrorFilter(Star):
     def __init__(self, context: Context, config: dict):
         super().__init__(context)
