@@ -23,6 +23,10 @@ class ErrorFilter(Star):
             if '请求失败' in message_str:
                 logger.info(message_str)
                 if self.Error_reply == '':
+                    logger.error('Error_reply is empty')
                     event.stop_event() # 停止回复
-                result.chain.clear()
-                result.message(self.Error_reply)
+                else:
+                    logger.info(f'Error_reply is not empty: {self.Error_reply}')
+                    result.chain.clear()
+                    result.message(self.Error_reply)
+                    event.send(result)
